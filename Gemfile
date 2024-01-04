@@ -1,6 +1,14 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in omniauth-notion.gemspec
+# Specify your gem's dependencies in omniauth-service-now.gemspec
 gemspec
+
+group :development, :test do
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-bundler'
+  gem 'rb-fsevent'
+  gem 'growl'
+  gem 'rake'
+  gem 'graphlient'
+end
